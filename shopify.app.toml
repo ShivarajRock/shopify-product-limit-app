@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "product-limit-app"
+client_id = "a4dd078d5584f7a0010d175baec87983"
+application_url = "https://curves-excluding-hobby-intended.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://curves-excluding-hobby-intended.trycloudflare.com/auth/callback",
+  "https://curves-excluding-hobby-intended.trycloudflare.com/auth/shopify/callback",
+  "https://curves-excluding-hobby-intended.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-10"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "bob-the-runner.myshopify.com"

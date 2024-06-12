@@ -1,0 +1,12 @@
+query Input {
+  cart {
+    lines {
+      quantity
+    }
+  }
+  shop {
+    metafield(namespace: "product_limit_app", key: "product_limit_data") {
+      value
+    }
+  }
+}
